@@ -7,13 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@1.10.0/dist/full.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mx-auto p-6"> 
-      <div class="flex"> 
-        <h1 class="text-3xl font-bold mb-6"> Caisse en ligne - HAIR COIFF </h1> 
-        <img style="width: 50px; height: 50px;" src="assets/img/logo/logo.png" alt=""> 
-      </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div id="montantModifiable" class="bg-white rounded-lg shadow-md">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">Caisse en ligne -HAIR COIFF </h1>
+        <div>
+        <a href="/index.html" class="btn btn-success flex items-center">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M7.293 15.293a1 1 0 0 1-1.414-1.414L10.586 10l-4.707-4.879a1 1 0 1 1 1.414-1.414l5 5a1 1 0 0 1 0 1.414l-5 5z" clip-rule="evenodd" />
+  </svg>
+  Retour vers le site
+</a>
+
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> 
+        <div id="montantModifiable" class="bg-white rounded-lg shadow-md">
                 <div class="p-4">
                     <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2FaEU2bh7fw0Rp6kM28i&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
                     <h2 class="text-lg font-bold mb-2">Montant: Modifiable</h2>
@@ -21,16 +27,6 @@
                         Copier le Lien
                     </button>
                     <a href="https://buy.stripe.com/aEU2bh7fw0Rp6kM28i" target="_blank" class="btn btn-primary">Payer ici</a>
-                </div>
-            </div>
-            <div id="montant10" class="bg-white rounded-lg shadow-md">
-                <div class="p-4">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F28o17dgQ60Rp24wbIK&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
-                    <h2 class="text-lg font-bold mb-2">Montant: 10 euros</h2>
-                    <button onclick="copierLien('https://buy.stripe.com/28o17dgQ60Rp24wbIK', 'btnCopier10')" id="btnCopier10" class="btn btn-primary mb-2">
-                        Copier le Lien
-                    </button>
-                    <a href="https://buy.stripe.com/28o17dgQ60Rp24wbIK" target="_blank" class="btn btn-primary">Payer ici</a>
                 </div>
             </div>
             <div id="montant3" class="bg-white rounded-lg shadow-md">
@@ -63,14 +59,24 @@
                     <a href="https://buy.stripe.com/6oEeY343keIfdNe4gl" target="_blank" class="btn btn-primary">Payer ici</a>
                 </div>
             </div>
-            <div id="montant13" class="bg-white rounded-lg shadow-md">
+            <div id="montant10" class="bg-white rounded-lg shadow-md">
                 <div class="p-4">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F28obLR9nEfMj4cE3cc&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
-                    <h2 class="text-lg font-bold mb-2">Montant: 13 euros</h2>
-                    <button onclick="copierLien('https://buy.stripe.com/28obLR9nEfMj4cE3cc', 'btnCopier13')" id="btnCopier13" class="btn btn-primary mb-2">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F28o17dgQ60Rp24wbIK&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 10 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/28o17dgQ60Rp24wbIK', 'btnCopier10')" id="btnCopier10" class="btn btn-primary mb-2">
                         Copier le Lien
                     </button>
-                    <a href="https://buy.stripe.com/28obLR9nEfMj4cE3cc" target="_blank" class="btn btn-primary">Payer ici</a>
+                    <a href="https://buy.stripe.com/28o17dgQ60Rp24wbIK" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant13" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2FaEU2bh7fw0Rp6kM28i&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 13 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/aEU2bh7fw0Rp6kM28i', 'btnCopier13')" id="btnCopier13" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/aEU2bh7fw0Rp6kM28i" target="_blank" class="btn btn-primary">Payer ici</a>
                 </div>
             </div>
             <div id="montant15" class="bg-white rounded-lg shadow-md">
